@@ -1,0 +1,27 @@
+# Flutter/Dart 관련 생성 파일 (용량 큼, 업로드 X)
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+
+# Android 관련 생성 파일
+android/.gradle
+android/local.properties
+android/app/build
+android/app/google-services.json
+
+# iOS 관련 생성 파일
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Pods/
+ios/.symlinks/
+ios/Runner/GoogleService-Info.plist
+
+# Mac OS 잡동사니
+.DS_Store
+
+# IDE 설정 파일
+.idea/
+.vscode/
+*.iml
