@@ -135,26 +135,23 @@
 <br>
 
 ---
+# 🛠️ 아키텍쳐 및 기술스택
 
-# 🛠️ 기술적 도전과 아키텍처 (Technical Insights)
-
-### 1. 🏗️ 시스템 아키텍처 (System Architecture)
-
-저희 팀은 초기 기획 단계부터 **운영 효율성**과 **확장성**을 고려하여, EC2와 같은 전통적인 서버를 배제하고 **100% Serverless 기반의 MSA(Microservices Architecture)**를 구축했습니다.
+### 1. 🏗️ 시스템 아키텍처
 
 <br>
 <p align="center">
-  <img src="images/hwikArc.png" alt="시스템 아키텍처" width="90%">
+  <img src="images/hwikArc.png" alt="시스템 아키텍처" width="80%">
 </p>
 <br>
 
 ### 2. 💡 핵심 기술 전략 (Key Technical Strategy)
 
-#### ① Full Serverless Backend (AWS Lambda + API Gateway)
+#### Full Serverless Backend (AWS Lambda + API Gateway)
 * **서버리스 전환:** 고정 비용이 발생하는 EC2 대신, **AWS Lambda**와 **API Gateway**를 활용하여 모든 비즈니스 로직을 처리했습니다.
 * **API 구성:** 총 **28개의 API Endpoints**를 마이크로서비스 단위로 쪼개어 구현함으로써, 특정 기능의 트래픽이 몰려도 전체 서비스에 영향이 가지 않도록 설계했습니다.
 
-#### ② Gen-AI Pipeline Automation (Step Functions Workflow)
+#### Gen-AI Pipeline Automation (Step Functions Workflow)
 사용자 이탈을 막기 위해 **"매력적인 숏폼 콘텐츠"**를 지속적으로 공급하는 것이 핵심이었습니다. 이를 위해 **AWS Step Functions**를 활용하여 영상 및 학습 데이터 생성 파이프라인을 자동화했습니다.
 
 * **영상 생성 파이프라인:**
@@ -163,13 +160,13 @@
 * **학습 데이터 생성 파이프라인:**
     * 단순 생성에 그치지 않고, **엄격한 가이드라인**이 적용된 프롬프트를 통해 학습 질문의 교육적 가치를 보장했습니다.
 
-#### ③ Advanced AI Integration
+#### Advanced AI Integration
 * **AI 피드백 (Bedrock):** 사용자의 발화를 분석하고 자연스러운 피드백을 제공하기 위해 **AWS Bedrock (Claude 모델)**을 연동했습니다.
 * **음성 처리 (Polly & Transcribe):**
     * **AWS Polly:** 원어민에 가까운 자연스러운 억양의 TTS를 제공하여 리스닝 품질을 높였습니다.
     * **AWS Transcribe:** 사용자의 음성을 텍스트로 변환(STT)하여 발음 정확도 분석의 기초 데이터로 활용했습니다.
 
-#### ④ Global Latency Optimization (CloudFront)
+#### Global Latency Optimization (CloudFront)
 * **문제 상황:** 공모전 환경상 리전이 **미국 동부(N. Virginia)**로 고정되어 있어, 한국 사용자에게 영상 로딩 지연(Latency)이 발생할 우려가 있었습니다.
 * **해결책:** **AWS CloudFront (CDN)**를 도입하여 정적 리소스(영상, 이미지)를 엣지 로케이션에서 캐싱 처리함으로써, 물리적 거리를 극복하고 **끊김 없는 숏폼 스트리밍 환경**을 제공했습니다.
 
@@ -177,11 +174,40 @@
 
 ### 3. 🧰 적용 기술 (Tech Stack)
 
-| 분류 | 기술 스택 |
-| :--- | :--- |
-| **Frontend** | <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=Flutter&logoColor=white"> <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=Dart&logoColor=white"> |
-| **Backend** | <img src="https://img.shields.io/badge/AWS_Lambda-FF9900?style=for-the-badge&logo=AWSLambda&logoColor=white"> <img src="https://img.shields.io/badge/API_Gateway-FF4F8B?style=for-the-badge&logo=AmazonAPIGateway&logoColor=white"> <img src="https://img.shields.io/badge/AWS_Step_Functions-E7157B?style=for-the-badge&logo=AmazonAWS&logoColor=white"> |
-| **AI & Data** | <img src="https://img.shields.io/badge/AWS_Bedrock-222222?style=for-the-badge&logo=AmazonAWS&logoColor=white"> <img src="https://img.shields.io/badge/AWS_Polly-FF9900?style=for-the-badge&logo=AmazonAWS&logoColor=white"> <img src="https://img.shields.io/badge/AWS_Transcribe-232F3E?style=for-the-badge&logo=AmazonAWS&logoColor=white"> |
-| **Infra & DB** | <img src="https://img.shields.io/badge/Amazon_S3-569A31?style=for-the-badge&logo=AmazonS3&logoColor=white"> <img src="https://img.shields.io/badge/CloudFront-D05C4B?style=for-the-badge&logo=AmazonAWS&logoColor=white"> <img src="https://img.shields.io/badge/Amazon_RDS_(MySQL)-527FFF?style=for-the-badge&logo=AmazonRDS&logoColor=white"> |
+<div align="center">
+
+  <h3>Frontend</h3>
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=Flutter&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=Dart&logoColor=white"/>
+
+  <br>
+
+  <h3>Backend & Serverless</h3>
+  <img src="https://img.shields.io/badge/AWS%20Lambda-FF9900?style=flat-square&logo=AWS%20Lambda&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Amazon%20API%20Gateway-FF4F8B?style=flat-square&logo=Amazon%20API%20Gateway&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AWS%20Step%20Functions-E7157B?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/>
+
+  <br>
+
+  <h3>AI & ML</h3>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AWS%20Bedrock-222222?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AWS%20Polly-FF9900?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AWS%20Transcribe-232F3E?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Google%20Veo-4285F4?style=flat-square&logo=Google&logoColor=white"/>
+
+  <br>
+
+  <h3>Infra & Database</h3>
+  <img src="https://img.shields.io/badge/Amazon%20S3-569A31?style=flat-square&logo=Amazon%20S3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Amazon%20CloudFront-D05C4B?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=flat-square&logo=Amazon%20DynamoDB&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Amazon%20RDS-527FFF?style=flat-square&logo=Amazon%20RDS&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/>
+
+</div>
+
+---
 
 ---
