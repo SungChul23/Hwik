@@ -65,9 +65,12 @@
   <a href="https://hwik.shop" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
     <img src="images/hwikLogo.png" alt="휙! 로고" width="300px" style="cursor: pointer;">
     <h3 style="margin: 10px 0; color: #111;">휙! (Hwik!)</h3>
-    <h4 style="margin: 4px 0; color: #ff6600;">hwik.shop</h4>
   </a>
+  <p style="color:#666; font-size:14px; margin-top:6px;">
+    👉 로고를 눌러 휙! 사이트로 이동하세요.
+  </p>
 </div>
+
 
 
 ### 💡 기획 의도
@@ -214,22 +217,26 @@
 </table>
 
 ---
-# 🎥 서비스 시연
 
-### 1. 영상 시청
-https://github.com/user-attachments/assets/5c3b0f06-adbd-424b-b0d3-da7a0acbb4e4
+<div align="center" style="max-width: 420px; margin: 0 auto;">
+  
+  <h3>1. 영상 시청</h3>
+  <a href="https://github.com/user-attachments/assets/5c3b0f06-adbd-424b-b0d3-da7a0acbb4e4" target="_blank">
+    <img src="https://github.com/user-attachments/assets/5c3b0f06-adbd-424b-b0d3-da7a0acbb4e4" width="300">
+  </a>
 
-<br>
+  <h3>2. 스텝별 문제풀이</h3>
+  <a href="https://github.com/user-attachments/assets/f6a20327-310e-4ebb-9e26-2483e543d59e" target="_blank">
+    <img src="https://github.com/user-attachments/assets/f6a20327-310e-4ebb-9e26-2483e543d59e" width="300">
+  </a>
 
-### 2. 스텝별 문제풀이
-https://github.com/user-attachments/assets/f6a20327-310e-4ebb-9e26-2483e543d59e
+  <h3>3. 둘러보기</h3>
+  <a href="https://github.com/user-attachments/assets/656a3dd5-40e8-421e-bd69-b3fbce29a5e8" target="_blank">
+    <img src="https://github.com/user-attachments/assets/656a3dd5-40e8-421e-bd69-b3fbce29a5e8" width="300">
+  </a>
 
-<br>
+</div>
 
-### 3. 둘러보기
-https://github.com/user-attachments/assets/656a3dd5-40e8-421e-bd69-b3fbce29a5e8
-
-<br>
 ---
 
 # 📱 UI 갤러리
