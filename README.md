@@ -137,7 +137,7 @@
 ---
 # 🛠️ 아키텍쳐 및 기술스택
 
-### 1. 🏗️ 시스템 아키텍처
+### 1. 시스템 아키텍처
 
 <br>
 <p align="center">
@@ -145,7 +145,7 @@
 </p>
 <br>
 
-### 2. 💡 핵심 기술 전략 (Key Technical Strategy)
+### 2. 기술 전략
 
 #### Full Serverless Backend (AWS Lambda + API Gateway)
 * **서버리스 전환:** 고정 비용이 발생하는 EC2 대신, **AWS Lambda**와 **API Gateway**를 활용하여 모든 비즈니스 로직을 처리했습니다.
@@ -172,7 +172,7 @@
 
 ---
 
-### 3. 🧰 적용 기술 (Tech Stack)
+### 3. 적용 기술
 
 <table width="100%">
   <tr>
@@ -186,7 +186,6 @@
       <img src="https://img.shields.io/badge/AWS%20Lambda-FF9900?style=flat-square&logo=AWS%20Lambda&logoColor=white"/>
       <img src="https://img.shields.io/badge/Amazon%20API%20Gateway-FF4F8B?style=flat-square&logo=Amazon%20API%20Gateway&logoColor=white"/>
       <img src="https://img.shields.io/badge/AWS%20Step%20Functions-E7157B?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/>
     </td>
   </tr>
   <tr>
@@ -209,4 +208,70 @@
     </td>
   </tr>
 </table>
+
+---
+
+
+# 📱 UI 갤러리 (App Screenshots)
+
+더 많은 앱의 실제 구동 화면을 확인하시려면 아래 각 항목을 클릭해주세요.
+
+<br>
+
+<details>
+<summary><b>🚀 1. 온보딩 및 회원가입 (Onboarding & Sign Up)</b></summary>
+<div markdown="1" align="center">
+  <br>
+  <img src="images/onboard_1.png" width="220px" alt="온보딩1">
+  <img src="images/onboard_2.png" width="220px" alt="온보딩2">
+  <img src="images/onboard_3.png" width="220px" alt="온보딩3">
+  <img src="images/onboard_4.png" width="220px" alt="온보딩4">
+  <img src="images/singup.png" width="220px" alt="회원가입">
+  <br><br>
+  <p>사용자가 앱의 핵심 가치를 이해하고 자연스럽게 가입으로 이어지도록 설계된 온보딩 플로우입니다.</p>
+</div>
+</details>
+
+<details>
+<summary><b>🔍 2. 탐색 및 테마 (Search & Explore)</b></summary>
+<div markdown="1" align="center">
+  <br>
+  <img src="images/searchPage.png" width="220px" alt="검색 페이지">
+  <img src="images/themeViewPage.png" width="220px" alt="테마 모아보기">
+  <br><br>
+  <p>원하는 숏폼 콘텐츠를 쉽게 찾고, 다양한 테마별로 모아볼 수 있는 탐색 기능입니다.</p>
+</div>
+</details>
+
+<details>
+<summary><b>📚 3. 메인 학습 플로우 (Main Learning Flow)</b></summary>
+<div markdown="1" align="center">
+  <br>
+  <img src="images/mainViewPage.png" width="220px" alt="메인 숏폼 뷰">
+  <img src="images/step1.png" width="220px" alt="학습 Step 1">
+  <img src="images/step2.png" width="220px" alt="학습 Step 2">
+  <img src="images/step3.png" width="220px" alt="학습 Step 3">
+  <img src="images/step4.png" width="220px" alt="학습 Step 4">
+  <br><br>
+  <p>숏폼 시청에서 시작하여 4단계 PPP 순환 학습으로 이어지는 핵심 학습 경험입니다.</p>
+</div>
+</details>
+
+<details>
+<summary><b>⚙️ 4. 프로필 및 설정 (Profile & Settings)</b></summary>
+<div markdown="1" align="center">
+  <br>
+  <img src="images/myProfilePage.png" width="220px" alt="마이 페이지">
+  <img src="images/myProfilesSidePage.png" width="220px" alt="사이드 메뉴">
+  <img src="images/pushAlarmPage.png" width="220px" alt="알림 설정">
+  <br>
+  <img src="images/feedbackPage.png" width="220px" alt="피드백 보내기">
+  <img src="images/termsofServicePage.png" width="220px" alt="이용약관">
+  <img src="images/privacyPolicyPage.png" width="220px" alt="개인정보처리방침">
+  <br><br>
+  <p>개인 학습 현황 관리 및 앱 사용 환경을 설정할 수 있는 메뉴들입니다.</p>
+</div>
+</details>
+
+<br>
 ---
