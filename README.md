@@ -174,40 +174,39 @@
 
 ### 3. 🧰 적용 기술 (Tech Stack)
 
-<div align="center">
-
-  <h3>Frontend</h3>
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=Flutter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=Dart&logoColor=white"/>
-
-  <br>
-
-  <h3>Backend & Serverless</h3>
-  <img src="https://img.shields.io/badge/AWS%20Lambda-FF9900?style=flat-square&logo=AWS%20Lambda&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Amazon%20API%20Gateway-FF4F8B?style=flat-square&logo=Amazon%20API%20Gateway&logoColor=white"/>
-  <img src="https://img.shields.io/badge/AWS%20Step%20Functions-E7157B?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/>
-
-  <br>
-
-  <h3>AI & ML</h3>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/AWS%20Bedrock-222222?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
-  <img src="https://img.shields.io/badge/AWS%20Polly-FF9900?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
-  <img src="https://img.shields.io/badge/AWS%20Transcribe-232F3E?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Google%20Veo-4285F4?style=flat-square&logo=Google&logoColor=white"/>
-
-  <br>
-
-  <h3>Infra & Database</h3>
-  <img src="https://img.shields.io/badge/Amazon%20S3-569A31?style=flat-square&logo=Amazon%20S3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Amazon%20CloudFront-D05C4B?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=flat-square&logo=Amazon%20DynamoDB&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Amazon%20RDS-527FFF?style=flat-square&logo=Amazon%20RDS&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/>
-
-</div>
-
----
-
+<table width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <h3>🎨 Frontend</h3>
+      <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=Flutter&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=Dart&logoColor=white"/>
+    </td>
+    <td align="center" width="50%">
+      <h3>⚡ Backend & Serverless</h3>
+      <img src="https://img.shields.io/badge/AWS%20Lambda-FF9900?style=flat-square&logo=AWS%20Lambda&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Amazon%20API%20Gateway-FF4F8B?style=flat-square&logo=Amazon%20API%20Gateway&logoColor=white"/>
+      <img src="https://img.shields.io/badge/AWS%20Step%20Functions-E7157B?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <h3>🤖 AI & ML</h3>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
+      <img src="https://img.shields.io/badge/AWS%20Bedrock-222222?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
+      <img src="https://img.shields.io/badge/AWS%20Polly-FF9900?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
+      <br> <img src="https://img.shields.io/badge/AWS%20Translate-232F3E?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Google%20Cloud%20STT-4285F4?style=flat-square&logo=Google%20Cloud&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Google%20Veo-4285F4?style=flat-square&logo=Google&logoColor=white"/>
+    </td>
+    <td align="center">
+      <h3>☁️ Infra & Database</h3>
+      <img src="https://img.shields.io/badge/Amazon%20S3-569A31?style=flat-square&logo=Amazon%20S3&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Amazon%20CloudFront-D05C4B?style=flat-square&logo=Amazon%20AWS&logoColor=white"/>
+      <br> <img src="https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=flat-square&logo=Amazon%20DynamoDB&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Amazon%20RDS-527FFF?style=flat-square&logo=Amazon%20RDS&logoColor=white"/>
+      <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/>
+    </td>
+  </tr>
+</table>
 ---
