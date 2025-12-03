@@ -7,7 +7,7 @@
 <table>
   <tr>
     <td width="60%" valign="top">
-      <h3>1. 🔍 도전의 시작: 2025 DATA VENTURE</h3>
+      <h3>1. 도전의 시작: 2025 DATA VENTURE</h3>
       <p>본 프로젝트는 서울대학교 빅데이터 혁신융합대학과 <b>AWS Korea</b>가 공동 주관한 <b>'2025 CO-SHOW 경진대회 데이터 벤처'</b>의 과제에서 시작되었습니다.</p>
       <p>경진대회는 <b>Flex, WeaversBRAIN, ANTLER</b> 세 기업이 제시한 실질적인 비즈니스 과제를 바탕으로 진행되었으며, 저희 팀은 이 중 <b>'WeaversBRAIN'</b> 기업의 미션에 도전하기로 결정했습니다.</p>
     </td>
@@ -19,7 +19,7 @@
   <tr>
     <td width="60%" valign="top">
       <br>
-      <h3>2. 🎯 핵심 목표: 컨텐츠 기반 AI 학습 구현</h3>
+      <h3>2. 핵심 목표: 컨텐츠 기반 AI 학습 구현</h3>
       <p>저희 팀이 선택한 <b>위버스 브레인(WeaversBRAIN)</b>의 미션은 다음과 같았습니다.</p>
       <blockquote>
         <p><b>💡 주요 주제: 컨텐츠 기반 AI 외국어 학습 서비스 구현</b></p>
@@ -35,7 +35,7 @@
   <tr>
     <td width="60%" valign="top">
       <br>
-      <h3>3. 🏁 최종 검증: 2025 CO-SHOW 발표 및 수상</h3>
+      <h3>3. 최종 검증: 2025 CO-SHOW 발표 및 수상</h3>
       <p>아이디어 구상과 약 두 달간의 집중적인 개발을 거쳐, 10월 31일 중간 발표를 성공적으로 통과하며 저희 팀은 <b>최종 발표 자격</b>을 획득했습니다.</p>
       <p>이후, 11월 26일부터 11월 29일까지 부산 BEXCO에서 개최된 <b>'2025 CO-SHOW'</b> 무대에서 최종 결과물을 선보였으며, 그 우수성을 인정받아 <b>두 가지 큰 상</b>을 수상하며 서비스의 가능성과 기술적 완성도를 완벽하게 입증했습니다.</p>
       <blockquote>
@@ -211,6 +211,36 @@
 
 ---
 
+
+# 🎥 서비스 시연
+
+이미지를 클릭하면 영상이 재생됩니다.
+
+<table width="100%">
+  <tr>
+    <td align="center" width="33%">
+      <b>🎬 Demo 1 (메인)</b><br>
+      <a href="images/videoDemo1.mp4">
+        <img src="images/mainViewPage.png" width="100%" alt="Demo1">
+      </a>
+    </td>
+    <td align="center" width="33%">
+      <b>🎬 Demo 2 (학습)</b><br>
+      <a href="images/videoDemo2.mp4">
+        <img src="images/step2.png" width="100%" alt="Demo2">
+      </a>
+    </td>
+    <td align="center" width="33%">
+      <b>🎬 Demo 3 (결과)</b><br>
+      <a href="images/videoDemo3.mp4">
+        <img src="images/step4.png" width="100%" alt="Demo3">
+      </a>
+    </td>
+  </tr>
+</table>
+<br>
+
+---
 
 # 📱 UI 갤러리
 
