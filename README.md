@@ -218,17 +218,20 @@
 
 ---
 
-# 🎥 서비스 시연 (Demo Watch)
+# 🎥 서비스 시연
 
-### 1. 영상 시청
-https://github.com/user-attachments/assets/5c3b0f06-adbd-424b-b0d3-da7a0acbb4e4
-<br>
-### 2. 스텝별 문제풀이
-https://github.com/user-attachments/assets/f6a20327-310e-4ebb-9e26-2483e543d59e
-<br>
-### 3. 둘러보기
-https://github.com/user-attachments/assets/656a3dd5-40e8-421e-bd69-b3fbce29a5e8
-<br>
+<h3>1. 영상 시청</h3>
+<video src="https://github.com/user-attachments/assets/5c3b0f06-adbd-424b-b0d3-da7a0acbb4e4" controls width="300"></video>
+
+<br><br>
+
+<h3>2. 스텝별 문제풀이</h3>
+<video src="https://github.com/user-attachments/assets/f6a20327-310e-4ebb-9e26-2483e543d59e" controls width="300"></video>
+
+<br><br>
+
+<h3>3. 둘러보기</h3>
+<video src="https://github.com/user-attachments/assets/656a3dd5-40e8-421e-bd69-b3fbce29a5e8" controls width="300"></video>
 
 ---
 
