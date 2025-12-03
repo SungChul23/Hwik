@@ -218,16 +218,16 @@
 
 ---
 
-<div align="center" style="max-width: 480px; margin: 0 auto;">
+<div align="center">
 
-### 1. 영상 시청  
-![demo1](https://github.com/user-attachments/assets/5c3b0f06-adbd-424b-b0d3-da7a0acbb4e4)
+<h3>1. 영상 시청</h3>
+https://github.com/user-attachments/assets/5c3b0f06-adbd-424b-b0d3-da7a0acbb4e4
 
-### 2. 스텝별 문제풀이  
-![demo2](https://github.com/user-attachments/assets/f6a20327-310e-4ebb-9e26-2483e543d59e)
+<h3>2. 스텝별 문제풀이</h3>
+https://github.com/user-attachments/assets/f6a20327-310e-4ebb-9e26-2483e543d59e
 
-### 3. 둘러보기  
-![demo3](https://github.com/user-attachments/assets/656a3dd5-40e8-421e-bd69-b3fbce29a5e8)
+<h3>3. 둘러보기</h3>
+https://github.com/user-attachments/assets/656a3dd5-40e8-421e-bd69-b3fbce29a5e8
 
 </div>
 
