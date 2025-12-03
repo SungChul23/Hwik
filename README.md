@@ -62,14 +62,17 @@
 # 🚀 서비스 소개: 휙! 넘기다 보면 말이 트인다!
 
 <div align="center">
-  <img src="images/hwikLogo.png" alt="휙! 로고" width="150px">
+  <img src="images/hwikLogo.png" alt="휙! 로고" width="300px">
   <h3>"휙! (Hwik!)"</h3>
 </div>
 
-> **💡 기획 의도 **
->
-> 무의미하게 흘려보내는 **'숏폼 시청 시간'**을 가장 강력한 **'언어 학습 시간'**으로 전환합니다.
-> **교육용 영상은 지루하다**는 편견을 깨고, 몰입감 높은 **드라마 타이즈 숏폼**과 **4단계 순환 학습**을 결합했습니다.
+### 💡 기획 의도
+
+현대인의 휴식 시간, 버스와 지하철에서의 자투리 시간은 '유튜브 쇼츠'나 '릴스'가 점령했습니다. 우리는 **"사람들이 멍하니 흘려보내는 이 시간을 학습 시간으로 바꿀 수는 없을까?"** 라는 질문에서 출발했습니다.
+
+* **부담 없는 접근:** 공부라는 심리적 장벽을 없애기 위해, 사용자에게 가장 익숙한 **숏폼 UI**를 차용했습니다.
+
+* **강력한 훅(Hook):** "교육용 영상은 지루하다"는 편견을 깨기 위해, 에듀테크 관점에서 **몰입감 높고 흥미로운 시나리오의 숏폼 콘텐츠**를 직접 제작하여 학습 지속성을 확보했습니다.
 
 ---
 
@@ -80,8 +83,8 @@
 <table width="100%">
   <thead>
     <tr>
-      <th width="50%" align="center">Step 1. 상황 인식 (Context)</th>
-      <th width="50%" align="center">Step 2. 문장 구조화 (Structure)</th>
+      <th width="50%" align="center">Step 1. 상황 이해하기 (Context)</th>
+      <th width="50%" align="center">Step 2. 문장 재배치 (Structure)</th>
     </tr>
   </thead>
   <tbody>
@@ -105,8 +108,8 @@
 <table width="100%">
   <thead>
     <tr>
-      <th width="50%" align="center">Step 3. 발화 및 피드백 (Shadowing)</th>
-      <th width="50%" align="center">Step 4. 실전 회화 (Role-Play)</th>
+      <th width="50%" align="center">Step 3. 따라 말하기 (Shadowing)</th>
+      <th width="50%" align="center">Step 4. 이제 당신 차례 (Role-Play)</th>
     </tr>
   </thead>
   <tbody>
@@ -123,7 +126,7 @@
         <img src="images/step4_Result.png" alt="Step 4 결과" width="45%">
         <br><br>
         <b>"다음 대사를 상상하여 대화를 완성합니다."</b><br>
-        <span style="font-size: 13px;">상호작용하는 <b>프리 토킹</b>을 통해<br>실전 회화 감각을 극대화합니다.</span>
+        <span style="font-size: 13px;">상호작용하는 <b>프리 토킹</b>을 통해<br>실전 회화 감각을 극대화하며 발화 이후 피드백을 통해 더욱 정확하고 완성도 높은 표현력을 갖춥니다.</span>
       </td>
     </tr>
   </tbody>
