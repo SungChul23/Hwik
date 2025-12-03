@@ -62,10 +62,13 @@
 # 🚀 서비스 소개: 휙! 넘기다 보면 말이 트인다!
 
 <div align="center">
-  <img src="images/hwikLogo.png" alt="휙! 로고" width="300px">
-  <h3>"휙! (Hwik!)"</h3>
-  <h4><a href="https://hwik.shop">hwik.shop</a></h4>
+  <a href="https://hwik.shop" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+    <img src="images/hwikLogo.png" alt="휙! 로고" width="300px" style="cursor: pointer;">
+    <h3 style="margin: 10px 0; color: #111;">휙! (Hwik!)</h3>
+    <h4 style="margin: 4px 0; color: #ff6600;">hwik.shop</h4>
+  </a>
 </div>
+
 
 ### 💡 기획 의도
 
@@ -213,10 +216,20 @@
 ---
 # 🎥 서비스 시연
 
-| 1. 영상 시청 | 2. 스텝별 문제풀이 | 3. 둘러보기 |
-| :---: | :---: | :---: |
-| [▶️ 영상 재생하기](https://github.com/user-attachments/assets/5c3b0f06-adbd-424b-b0d3-da7a0acbb4e4) | [▶️ 영상 재생하기](https://github.com/user-attachments/assets/f6a20327-310e-4ebb-9e26-2483e543d59e) | [▶️ 영상 재생하기](https://github.com/user-attachments/assets/656a3dd5-40e8-421e-bd69-b3fbce29a5e8) |
+### 1. 영상 시청
+https://github.com/user-attachments/assets/5c3b0f06-adbd-424b-b0d3-da7a0acbb4e4
 
+<br>
+
+### 2. 스텝별 문제풀이
+https://github.com/user-attachments/assets/f6a20327-310e-4ebb-9e26-2483e543d59e
+
+<br>
+
+### 3. 둘러보기
+https://github.com/user-attachments/assets/656a3dd5-40e8-421e-bd69-b3fbce29a5e8
+
+<br>
 ---
 
 # 📱 UI 갤러리
