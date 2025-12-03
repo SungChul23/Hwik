@@ -12,7 +12,7 @@
       <p>경진대회는 <b>Flex, WeaversBRAIN, ANTLER</b> 세 기업이 제시한 실질적인 비즈니스 과제를 바탕으로 진행되었으며, 저희 팀은 이 중 <b>'WeaversBRAIN'</b> 기업의 미션에 도전하기로 결정했습니다.</p>
     </td>
     <td width="40%" align="center">
-      <img src="images/project_BackGround/2025_DATA_VENTURE_POSTER_MAIN.png" alt="2025 DATA VENTURE 포스터" width="300px">
+      <img src="images/project_BackGround/2025_DATA_VENTURE_POSTER_MAIN.png" alt="2025 DATA VENTURE 포스터" width="200px">
     </td>
   </tr>
 
@@ -28,7 +28,7 @@
     </td>
     <td width="40%" align="center">
       <br>
-      <img src="images/project_BackGround/2025_DATA_VENTURE_POSTER_WeaversBRAIN.png" alt="위버스브레인 과제 설명" width="150px">
+      <img src="images/project_BackGround/2025_DATA_VENTURE_POSTER_WeaversBRAIN.png" alt="위버스브레인 과제 설명" width="200px">
     </td>
   </tr>
 
@@ -48,7 +48,7 @@
     </td>
     <td width="40%" align="center">
       <br>
-      <img src="images/project_BackGround/coshowPoster.png" alt="2025 CO-SHOW 포스터" width="300px">
+      <img src="images/project_BackGround/coshowPoster.png" alt="2025 CO-SHOW 포스터" width="200px">
     </td>
   </tr>
 </table>
