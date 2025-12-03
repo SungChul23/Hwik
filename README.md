@@ -28,7 +28,7 @@
     </td>
     <td width="40%" align="center">
       <br>
-      <img src="images/project_BackGround/2025_DATA_VENTURE_POSTER_WeaversBRAIN.png" alt="위버스브레인 과제 설명" width="300px">
+      <img src="images/project_BackGround/2025_DATA_VENTURE_POSTER_WeaversBRAIN.png" alt="위버스브레인 과제 설명" width="150px">
     </td>
   </tr>
 
