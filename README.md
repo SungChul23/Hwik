@@ -212,14 +212,14 @@
 ---
 
 
-# 📱 UI 갤러리 (App Screenshots)
+# 📱 UI 갤러리
 
 더 많은 앱의 실제 구동 화면을 확인하시려면 아래 각 항목을 클릭해주세요.
 
 <br>
 
 <details>
-<summary><b>🚀 1. 온보딩 및 회원가입 (Onboarding & Sign Up)</b></summary>
+<summary><b>🚀 1. 온보딩 및 회원가입 </b></summary>
 <div markdown="1" align="center">
   <br>
   <img src="images/onboard_1.png" width="220px" alt="온보딩1">
@@ -233,7 +233,7 @@
 </details>
 
 <details>
-<summary><b>🔍 2. 탐색 및 테마 (Search & Explore)</b></summary>
+<summary><b>🔍 2. 탐색 및 테마 </b></summary>
 <div markdown="1" align="center">
   <br>
   <img src="images/searchPage.png" width="220px" alt="검색 페이지">
@@ -244,7 +244,7 @@
 </details>
 
 <details>
-<summary><b>📚 3. 메인 학습 플로우 (Main Learning Flow)</b></summary>
+<summary><b>📚 3. 메인 학습 플로우 </b></summary>
 <div markdown="1" align="center">
   <br>
   <img src="images/mainViewPage.png" width="220px" alt="메인 숏폼 뷰">
@@ -258,7 +258,7 @@
 </details>
 
 <details>
-<summary><b>⚙️ 4. 프로필 및 설정 (Profile & Settings)</b></summary>
+<summary><b>⚙️ 4. 프로필 및 설정 </b></summary>
 <div markdown="1" align="center">
   <br>
   <img src="images/myProfilePage.png" width="220px" alt="마이 페이지">
@@ -268,10 +268,12 @@
   <img src="images/feedbackPage.png" width="220px" alt="피드백 보내기">
   <img src="images/termsofServicePage.png" width="220px" alt="이용약관">
   <img src="images/privacyPolicyPage.png" width="220px" alt="개인정보처리방침">
+  <img src="images/teamInfoPage.png" width="220px" alt="팀원소개">
   <br><br>
   <p>개인 학습 현황 관리 및 앱 사용 환경을 설정할 수 있는 메뉴들입니다.</p>
 </div>
 </details>
 
 <br>
----
+
+
