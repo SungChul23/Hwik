@@ -61,79 +61,74 @@
 
 # 🚀 서비스 소개: 휙! 넘기다 보면 말이 트인다!
 
-<br>
-<p align="center">
-  <img src="images/hwikLogo.png" alt="휙! 로고" width="200px">
-  <br><br>
-  <b>"휙! (Hwik!)"</b>
-</p>
-<br>
+<div align="center">
+  <img src="images/hwikLogo.png" alt="휙! 로고" width="150px">
+  <h3>"휙! (Hwik!)"</h3>
+</div>
 
-### 💡 기획 의도
-
-현대인의 휴식 시간, 버스와 지하철에서의 자투리 시간은 '유튜브 쇼츠'나 '릴스'가 점령했습니다. 우리는 **"사람들이 멍하니 흘려보내는 이 시간을 학습 시간으로 바꿀 수는 없을까?"** 라는 질문에서 출발했습니다.
-
-* **부담 없는 접근:** 공부라는 심리적 장벽을 없애기 위해, 사용자에게 가장 익숙한 **숏폼 UI**를 차용했습니다.
-* **강력한 훅(Hook):** "교육용 영상은 지루하다"는 편견을 깨기 위해, 에듀테크 관점에서 **몰입감 높고 흥미로운 시나리오의 숏폼 콘텐츠**를 직접 제작하여 학습 지속성을 확보했습니다.
+> **💡 기획 의도 **
+>
+> 무의미하게 흘려보내는 **'숏폼 시청 시간'**을 가장 강력한 **'언어 학습 시간'**으로 전환합니다.
+> **교육용 영상은 지루하다**는 편견을 깨고, 몰입감 높은 **드라마 타이즈 숏폼**과 **4단계 순환 학습**을 결합했습니다.
 
 ---
 
 ### 📚 학습 방법: 4단계 PPP 순환 학습 (Flow Learning)
 
-'휙!'은 단순히 영상을 보는 것을 넘어, 검증된 언어 학습 이론인 **PPP (Presentation - Practice - Production)** 모델을 숏폼 환경에 최적화하여 4단계 사이클로 재설계했습니다.
+검증된 언어 학습 이론인 **PPP (Presentation - Practice - Production)** 모델을 숏폼 환경에 최적화하여 설계했습니다.
 
-<table border="0">
-  <tr>
-    <td width="55%" valign="top">
-      <h3>Step 1. 상황 인식 (Context Awareness)</h3>
-      <p><b>"영상 속 주인공이 되어 상황에 몰입합니다."</b></p>
-      <p>흥미로운 숏폼 드라마를 통해 학습할 핵심 표현이 실제로 사용되는 <b>맥락(Context)</b>과 뉘앙스를 자연스럽게 파악합니다. 딱딱한 텍스트가 아닌, 살아있는 상황 속에서 입력을 시작합니다.</p>
-    </td>
-    <td width="45%" align="center">
-      <img src="images/step1.png" alt="Step 1 상황 인식" width="200px">
-    </td>
-  </tr>
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="50%" align="center">Step 1. 상황 인식 (Context)</th>
+      <th width="50%" align="center">Step 2. 문장 구조화 (Structure)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <img src="images/step1.png" alt="Step 1" width="200px">
+        <br><br>
+        <b>"영상 속 주인공이 되어 상황에 몰입합니다."</b><br>
+        <span style="font-size: 13px;">살아있는 <b>맥락(Context)</b> 속에서<br>핵심 표현과 뉘앙스를 자연스럽게 파악합니다.</span>
+      </td>
+      <td align="center" valign="top">
+        <img src="images/step2.png" alt="Step 2" width="200px">
+        <br><br>
+        <b>"흩어진 문장을 재배열하며 구조를 익힙니다."</b><br>
+        <span style="font-size: 13px;">단어 블록을 조립하며 문장의 <b>구조적 원리</b>를<br>게임을 하듯 능동적으로 체득합니다.</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-  <tr>
-    <td width="55%" valign="top">
-      <br>
-      <h3>Step 2. 문장 구조화 (Sentence Building)</h3>
-      <p><b>"흩어진 문장을 재배열하며 구조를 익힙니다."</b></p>
-      <p>영상에서 들었던 핵심 문장의 단어들을 올바른 순서로 재배치합니다. 이 과정을 통해 단순히 암기하는 것이 아니라, 문장의 <b>구조적 원리</b>를 능동적으로 체득하게 됩니다.</p>
-    </td>
-    <td width="45%" align="center">
-      <br>
-      <img src="images/step2.png" alt="Step 2 문장 재배치" width="200px">
-    </td>
-  </tr>
-
-  <tr>
-    <td width="55%" valign="top">
-      <br>
-      <h3>Step 3. 발화 및 AI 피드백 (Shadowing & Feedback)</h3>
-      <p><b>"주인공의 억양과 발음을 그대로 훔칩니다."</b></p>
-      <p>주인공의 대사를 직접 소리 내어 따라 합니다. 사용자의 발화를 AI가 분석 후 피드백을 제공하며 <b>발음 정확도(Accuracy)</b>와 <b>억양</b>에 대한 즉각적인 피드백을 제공, 원어민에 가까운 발화를 유도합니다.</p>
-    </td>
-    <td width="45%" align="center">
-      <br>
-      <img src="images/step3.png" alt="Step 3 스피킹" width="180px">
-      <img src="images/step3_Result.png" alt="Step 3 결과" width="180px">
-    </td>
-  </tr>
-
-  <tr>
-    <td width="55%" valign="top">
-      <br>
-      <h3>Step 4. 실전 회화 (Role-Play & Production)</h3>
-      <p><b>"다음 대사를 상상하여 대화를 완성합니다."</b></p>
-      <p>단순 반복을 넘어, 이어질 대화 내용을 스스로 생각하고 말해봅니다. 실제 대화 상황처럼 사용자의 답변에 따라 상호작용하며, 어려울 경우 <b>한국어 발화</b>를 통해 힌트를 얻을 수 있어 포기하지 않고 학습을 완주할 수 있습니다.</p>
-    </td>
-    <td width="45%" align="center">
-      <br>
-      <img src="images/step4.png" alt="Step 4 롤플레잉" width="180px">
-      <img src="images/step4_Result.png" alt="Step 4 결과" width="180px">
-    </td>
-  </tr>
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="50%" align="center">Step 3. 발화 및 피드백 (Shadowing)</th>
+      <th width="50%" align="center">Step 4. 실전 회화 (Role-Play)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <img src="images/step3.png" alt="Step 3 입력" width="45%">
+        <img src="images/step3_Result.png" alt="Step 3 결과" width="45%">
+        <br><br>
+        <b>"주인공의 억양과 발음을 그대로 훔칩니다."</b><br>
+        <span style="font-size: 13px;">AI가 사용자의 발음을 분석하여<br><b>정확도(Accuracy)</b>와 <b>억양</b>을 즉시 피드백합니다.</span>
+      </td>
+      <td align="center" valign="top">
+        <img src="images/step4.png" alt="Step 4 입력" width="45%">
+        <img src="images/step4_Result.png" alt="Step 4 결과" width="45%">
+        <br><br>
+        <b>"다음 대사를 상상하여 대화를 완성합니다."</b><br>
+        <span style="font-size: 13px;">상호작용하는 <b>프리 토킹</b>을 통해<br>실전 회화 감각을 극대화합니다.</span>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 <br>
+
+
