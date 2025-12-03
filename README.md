@@ -62,8 +62,9 @@
 # 🚀 서비스 소개: 휙! 넘기다 보면 말이 트인다!
 
 <div align="center">
-  <img src="images/hwikLogo.png" alt="휙! 로고" width="300px">
-  <h3>"휙! (Hwik!)"</h3>
+  <img src="images/hwikLogo.png" alt="휙! 로고" width="300px">
+  <h3>"휙! (Hwik!)"</h3>
+  <h4><a href="https://hwik.shop">hwik.shop</a></h4>
 </div>
 
 ### 💡 기획 의도
@@ -210,35 +211,11 @@
 </table>
 
 ---
-
-
 # 🎥 서비스 시연
 
-이미지를 클릭하면 영상이 재생됩니다.
-
-<table width="100%">
-  <tr>
-    <td align="center" width="33%">
-      <b>🎬 Demo 1 (메인)</b><br>
-      <a href="images/videoDemo1.mp4">
-        <img src="images/mainViewPage.png" width="100%" alt="Demo1">
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <b>🎬 Demo 2 (학습)</b><br>
-      <a href="images/videoDemo2.mp4">
-        <img src="images/step2.png" width="100%" alt="Demo2">
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <b>🎬 Demo 3 (결과)</b><br>
-      <a href="images/videoDemo3.mp4">
-        <img src="images/step4.png" width="100%" alt="Demo3">
-      </a>
-    </td>
-  </tr>
-</table>
-<br>
+| 1. 영상 시청 | 2. 스텝별 문제풀이 | 3. 둘러보기 |
+| :---: | :---: | :---: |
+| [▶️ 영상 재생하기](https://github.com/user-attachments/assets/5c3b0f06-adbd-424b-b0d3-da7a0acbb4e4) | [▶️ 영상 재생하기](https://github.com/user-attachments/assets/f6a20327-310e-4ebb-9e26-2483e543d59e) | [▶️ 영상 재생하기](https://github.com/user-attachments/assets/656a3dd5-40e8-421e-bd69-b3fbce29a5e8) |
 
 ---
 
