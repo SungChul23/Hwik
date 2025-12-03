@@ -174,8 +174,8 @@
     * **AWS Transcribe:** 사용자의 음성을 텍스트로 변환(STT)하여 발음 정확도 분석의 기초 데이터로 활용했습니다.
 
 #### Global Latency Optimization (CloudFront)
-* **문제 상황:** 공모전 환경상 리전이 **미국 동부(N. Virginia)**로 고정되어 있어, 한국 사용자에게 영상 로딩 지연(Latency)이 발생할 우려가 있었습니다.
-* **해결책:** **AWS CloudFront (CDN)**를 도입하여 정적 리소스(영상, 이미지)를 엣지 로케이션에서 캐싱 처리함으로써, 물리적 거리를 극복하고 **끊김 없는 숏폼 스트리밍 환경**을 제공했습니다.
+* **문제 상황:** 공모전 환경상 리전이 미국 동부(N. Virginia)로 고정되어 있어, 한국 사용자에게 영상 로딩 지연(Latency)이 발생할 우려가 있었습니다.
+* **해결책:** AWS CloudFront (CDN)를 도입하여 정적 리소스(영상, 이미지)를 엣지 로케이션에서 캐싱 처리함으로써, 물리적 거리를 극복하고 **끊김 없는 숏폼 스트리밍 환경**을 제공했습니다.
 
 ---
 
@@ -218,22 +218,16 @@
 
 ---
 
-<div align="center" style="max-width: 420px; margin: 0 auto;">
-  
-  <h3>1. 영상 시청</h3>
-  <a href="https://github.com/user-attachments/assets/5c3b0f06-adbd-424b-b0d3-da7a0acbb4e4" target="_blank">
-    <img src="https://github.com/user-attachments/assets/5c3b0f06-adbd-424b-b0d3-da7a0acbb4e4" width="300">
-  </a>
+<div align="center" style="max-width: 480px; margin: 0 auto;">
 
-  <h3>2. 스텝별 문제풀이</h3>
-  <a href="https://github.com/user-attachments/assets/f6a20327-310e-4ebb-9e26-2483e543d59e" target="_blank">
-    <img src="https://github.com/user-attachments/assets/f6a20327-310e-4ebb-9e26-2483e543d59e" width="300">
-  </a>
+### 1. 영상 시청  
+![demo1](https://github.com/user-attachments/assets/5c3b0f06-adbd-424b-b0d3-da7a0acbb4e4)
 
-  <h3>3. 둘러보기</h3>
-  <a href="https://github.com/user-attachments/assets/656a3dd5-40e8-421e-bd69-b3fbce29a5e8" target="_blank">
-    <img src="https://github.com/user-attachments/assets/656a3dd5-40e8-421e-bd69-b3fbce29a5e8" width="300">
-  </a>
+### 2. 스텝별 문제풀이  
+![demo2](https://github.com/user-attachments/assets/f6a20327-310e-4ebb-9e26-2483e543d59e)
+
+### 3. 둘러보기  
+![demo3](https://github.com/user-attachments/assets/656a3dd5-40e8-421e-bd69-b3fbce29a5e8)
 
 </div>
 
