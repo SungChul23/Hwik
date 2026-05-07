@@ -132,7 +132,7 @@
 공부라는 심리적 장벽을 없애기 위해 **숏폼 UI**를 차용하고,
 에듀테크 관점에서 몰입감 높은 시나리오 콘텐츠를 직접 제작하여 학습 지속성을 확보했습니다.
 
-- ·일본어·스페인어·중국어 지원
+- 일본어·스페인어·중국어 지원
 - 숏폼 기반 4단계 순환 학습 구조
 - AI 발음 분석 및 즉각적 피드백
 - 학습 이력 관리 및 복습 기능
@@ -221,17 +221,86 @@ AWS Lambda는 **FaaS(Function as a Service)** 모델을 기반으로 동작합�
 - **Lambda + API Gateway** 조합으로 총 **28개 API Endpoint** 를 마이크로서비스 단위로 분리 구현
 - 특정 기능 트래픽 급증 시에도 해당 함수만 독립적으로 스케일링되어 전체 서비스 안정성 확보
 
-**② Gen-AI 콘텐츠 생성 파이프라인 (Step Functions)**
-- 숏폼 영상·학습 데이터 생성 자동화를 **Step Functions** 상태 머신으로 오케스트레이션
-- 영상 파이프라인: Google Custom Search 이미지 수집 → Google Veo 3 영상 생성 → Lambda QA 검수 → 부적합 시 자동 재생성
-- 학습 데이터 파이프라인: 엄격한 프롬프트 가이드라인 기반 교육적 정확성 확보
+---
 
-**③ AI 통합**
-- **AWS Bedrock (Claude)** — 사용자 발화 분석 및 자연어 피드백
+**② Gen-AI 영상 자동 생성 파이프라인 (Step Functions)**
+
+고품질 영상(Veo3) 생성에 5분 이상 소요되는 문제를 해결하기 위해, **AWS Step Functions + SQS 기반의 완전 비동기 파이프라인**을 설계했습니다.
+
+> **핵심 문제:** 동기 처리 시 API 타임아웃(Lambda 최대 15분) 및 UX 저하 발생  
+> **해결 전략:** "요청 즉시 202 반환 → 영상 생성은 비동기로 분리" 패턴 적용
+
+<p align="center">
+  <img src="images/hwik_video_pipeline.svg" alt="GenAI 영상 자동 생성 파이프라인" width="85%"/>
+</p>
+
+**파이프라인 단계별 설명**
+
+| 단계 | Lambda | 역할 | 핵심 기술 |
+|------|--------|------|-----------|
+| **L1** | API Gateway | 요청 즉시 `202 Accepted` 반환 — 클라이언트 대기 0초 | API Gateway |
+| **L2** | GenScript | 미디어 타입에 맞는 대본, 대사, 영상 프롬프트 생성 | Claude 3.5 Sonnet (Bedrock) |
+| **L3** | ImageCrawling | 레퍼런스 이미지 5개 수집 후 텍스트 기반 최적 이미지 1개 선택 | Google Custom Search API |
+| **L4** | GenVideo | 이미지 + 프롬프트로 영상 생성 요청 후 **작업 ID만 SQS에 발행하고 즉시 종료** | Google Veo3, SQS |
+| **Wait** | — | Step Functions 상태 정지 — Lambda 미실행으로 비용 효율 확보 | SQS polling (EventBridge) |
+| **L5** | Video Inspection | 음성 대사·이미지·저작권 기준 GenAI 품질 스코어링 — **기준 미달 시 L2 자동 회귀** | Claude (Bedrock) |
+| **L6** | Save | 최종 영상을 S3로 이관, DB 상태 업데이트, 사용자 알림 전송 | S3, DynamoDB |
+| **Streams** | — | L6 저장 이벤트로 **학습 데이터 자동 생성** 파이프라인 트리거 | DynamoDB Streams |
+
+<details>
+<summary><b>비동기 처리의 핵심 — Wait 상태와 SQS Polling 패턴</b></summary>
+<br>
+
+Lambda가 영상 완료를 직접 기다리면 15분 타임아웃 제약에 걸리고, 그 시간 동안 비용도 계속 발생합니다. 이를 해결하기 위해 **`.waitForTaskToken`** 패턴을 적용했습니다.
+
+```
+L4 Lambda 종료 (Veo3 작업 ID + taskToken → SQS 저장)
+        ↓
+Step Functions WAIT  ←  실행 중인 코드 없음, Lambda 비용 없음
+        ↓
+EventBridge (30초 주기) → 폴러 Lambda → Veo3 API 완료 여부 확인
+        ↓ 완료 감지
+SendTaskSuccess(taskToken) → Step Functions 재개 → L5 실행
+```
+
+- **Google Veo3는 AWS를 모름** — 구글이 직접 콜백을 보내는 것이 아니라, AWS 폴러 Lambda가 주기적으로 구글 API를 조회하고 완료 시 `SendTaskSuccess`를 직접 호출
+- **SQS 메시지 구조:** `{ operationId: "veo-op-abc123", taskToken: "AAAAKg..." }` — 폴러가 두 값을 꺼내 구글 조회 후 Step Functions 재개에 사용
+- **Map 상태로 최대 100개 동시 처리** — 영상 N개가 각각 독립된 이터레이터로 L3 ~ L6를 병렬 실행
+
+</details>
+
+---
+
+**③ 사용자 음성 학습 파이프라인 (Step 3·4)**
+
+사용자가 음성을 녹음하면 **비동기 처리**로 STT → 언어별 AI 피드백 → TTS → 학습 기록 저장까지 자동으로 처리됩니다.
+
+> **핵심 설계:** 클라이언트는 요청 즉시 jobId를 받고, `get-learning-task` Lambda polling으로 완료를 감지 (202 처리 중 → 200 완료)
+
+<p align="center">
+  <img src="images/hwik_learning_voice_pipeline.svg" alt="사용자 음성 처리 파이프라인" width="85%"/>
+</p>
+
+**파이프라인 단계별 설명**
+
+| 단계 | 구성 요소 | 역할 |
+|------|-----------|------|
+| **음성 업로드** | API GW Authorizer | 헤더 UUID로 사용자 인증, jobId 기반 메타데이터 저장 |
+| **Presigned URL** | generate-upload-s3URL Lambda | 클라이언트가 서버를 거치지 않고 S3에 직접 PUT |
+| **이벤트 트리거** | S3 → SQS → Lambda | mp3 저장 시 ObjectCreated 이벤트 → SQS → learning-task 트리거 |
+| **STT** | AWS Transcribe | 사용자 음성 텍스트 변환 · lang 값 판별 |
+| **외국어 분기** | Claude (Bedrock) + Polly | 문장 피드백 → 교정 음성 생성 → S3 저장 |
+| **한국어 분기** | AWS Translate + Polly | 한국어 → 타겟 언어 번역 → 번역 음성 생성 → S3 저장 |
+| **기록 저장** | DynamoDB / RDS | 양쪽 파이프라인 공통으로 사용자 학습 이력 저장 |
+| **결과 반환** | get-learning-task Lambda | 클라이언트 polling → 완료 시 200 + 결과 데이터 반환 |
+
+**④ AI 서비스 통합**
+- **AWS Bedrock (Claude)** — 사용자 발화 교정 및 자연어 피드백 생성
 - **AWS Polly** — 원어민 수준 TTS로 리스닝 품질 제고
 - **AWS Transcribe** — STT 및 발음 정확도 분석
+- **AWS Translate** — 한국어 입력 문장의 타겟 언어 번역
 
-**④ Global Latency 최적화 (CloudFront)**
+**⑤ Global Latency 최적화 (CloudFront)**
 - 미국 동부 리전 고정으로 인한 한국 사용자 영상 지연 문제를 **CloudFront CDN** 도입으로 해결
 - 정적 리소스를 엣지 로케이션에 캐싱하여 끊김 없는 숏폼 스트리밍 환경 제공
 
