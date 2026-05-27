@@ -8,7 +8,7 @@
 
 > 짧은 영상으로 듣기 → 말하기 → 피드백까지 한 번에 학습하는 AI 외국어 스피킹 서비스
 
-[![Service](https://img.shields.io/badge/서비스-hwik.shop-20C997?style=for-the-badge)](https://hwik.shop)
+
 
 </div>
 
