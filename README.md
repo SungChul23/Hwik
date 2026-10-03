@@ -24,6 +24,14 @@
 > 서울대학교 빅데이터 혁신융합대학 × AWS Korea 공동 주관  
 > 2025.11.26 ~ 11.29 부산 BEXCO 최종 발표
 
+
+### 📑 Project Presentation
+
+> 2025 CO-SHOW 최종 발표에서 사용한 프로젝트 발표자료입니다.
+
+[![Presentation](https://img.shields.io/badge/CO--SHOW_발표자료-PDF로_보기-EA4335?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./2025_CO_SHOW_Presentation.pdf)
+
+
 ---
 
 ## ⚡ 프로젝트 한눈에 보기
